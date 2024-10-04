@@ -33,6 +33,36 @@
               "zone.js/testing"
             ]
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/demo-ds/.storybook",
+            "browserTarget": "demo-ds:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/demo-ds"
+            ],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/demo-ds/.storybook",
+            "browserTarget": "demo-ds:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/demo-ds"
+            ],
+            "outputDir": "storybook-static"
+          }
         }
       }
     }
