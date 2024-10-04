@@ -15,6 +15,14 @@
     "declaration": false,
     "experimentalDecorators": true,
     "moduleResolution": "node",
+    "paths": {
+      "demo-ds": [
+        "./dist/demo-ds"
+      ],
+      "ralam-ds": [
+        "./dist/ralam-ds"
+      ]
+    },
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
