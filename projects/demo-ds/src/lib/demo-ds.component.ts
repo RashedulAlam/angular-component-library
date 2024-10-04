@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <p>
+    <p style="background-color: red;">
       demo-ds works!
     </p>
   `,
